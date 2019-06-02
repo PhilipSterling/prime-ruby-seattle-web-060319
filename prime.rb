@@ -1,11 +1,9 @@
 # Add  code here!
-def prime?(x)
-  array = (2..x-1).to_a
-  counter = 0
-  for counter in 1..array.length do
-    if(x%array[counter] == 0)
-      return true
-    end
+def isPrime?(num)
+  (2..Math.sqrt(num)).each { |i|
+  if num % i == 0 && i < num
     return false
-    end  
+  end
+  }
+  return true
 end
