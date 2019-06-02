@@ -9,7 +9,7 @@ def prime?(num)
   elsif(num == 1 || num == 0)
   return false
   else
-    (num..2).each { |i|
+    (num..-1).each { |i|
     if num % i == 0 && i < num
     return false
   end }
