@@ -6,13 +6,8 @@ def prime?(num)
     return false
     end
     }
-  elsif(num == 1 || num == 0)
-  return false
   else
-    (num..-1).each { |i|
-    if num % i == 0 && i < num
     return false
-  end }
-end
+  end
   return true
 end
